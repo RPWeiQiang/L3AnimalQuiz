@@ -8,7 +8,7 @@ const InputBox = ({ label, onChangeText }) => {
         <View style={{ marginBottom: 20 }}>
             <Text>{label}</Text>
             <TextInput
-                style={{ borderWidth: 1, padding: 10, marginVertical: 5 }}
+                style={{ borderWidth: 1, padding: 11, marginVertical: 5 }}
                 onChangeText={onChangeText}
             />
         </View>

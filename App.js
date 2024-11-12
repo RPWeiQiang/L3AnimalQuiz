@@ -118,7 +118,7 @@ const MyApp = () => {
     };
 
     return (
-        <View style={{ padding: 20, paddingTop: 50, paddingBottom: 150}}>
+        <View style={{ padding: 20, paddingTop: 50, paddingBottom: 170}}>
             <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center',marginBottom:10 }}>
                 <Icon name="paw" size={30} color="#5d8aa8" />
                 <Text style={{ color: 'black', fontSize: 30, fontWeight: 'bold',}}>Animal Quiz</Text>

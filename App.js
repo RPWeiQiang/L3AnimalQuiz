@@ -66,10 +66,6 @@ const styles = StyleSheet.create({
       borderStyle:'dashed',
       borderColor:'#5d8aa8',
   },
-
-
-
-
 })
 const Quiz = ({ img, opt1, opt2, opt3, onSelectAnswer }) => {
     return (
@@ -108,7 +104,7 @@ const MyApp = () => {
         } else if (points === 2) {
             feedback = "Good job! You almost got them all.";
         } else if (points === 1) {
-            feedback = "Good job! You almost got them all.";
+            feedback = "Come on! You can do better.";
         } else {
             feedback = "You can do better next time!";
         }
@@ -125,23 +121,23 @@ const MyApp = () => {
                 <Icon name="paw" size={30} color="#5d8aa8"  />
             </View>
             <View style={styles.border}>
-            <InputBox style={styles.username} label="Username"  onChangeText={(text) => setUsername(text)} />
+            <InputBox  label="Username"  onChangeText={(text) => setUsername(text)} />
             </View>
             <ScrollView contentContainerStyle={{ paddingBottom: 20 }}>
                 <View style={styles.border}>
                 <Quiz
-                    img={require('./img/elephant.jpg')}
-                    opt1="Elephant"
+                    img={require('./img/rabbit.jpg')}
+                    opt1="Rabbit"
                     opt2="Horse"
                     opt3="Bee"
                     correctValue={1}
                     onSelectAnswer={(value) => AnswerSelect(value, 1)}
                 />
                 <Quiz
-                    img={require('./img/deer.jpg')}
+                    img={require('./img/penguin.jpg')}
                     opt1="Tiger"
-                    opt2="Deer"
-                    opt3="Cheetah"
+                    opt2="Penguin"
+                    opt3="Deer"
                     correctValue={2}
                     onSelectAnswer={(value) => AnswerSelect(value, 2)}
                 />

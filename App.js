@@ -110,7 +110,7 @@ const MyApp = () => {
         }
 
         Alert.alert("You got " + points + " out of 3 correct!", feedback);
-        setPoints(0); // Reset points after submission
+        setPoints(0);
     };
 
     return (

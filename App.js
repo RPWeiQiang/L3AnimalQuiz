@@ -102,11 +102,11 @@ const MyApp = () => {
         if (points === 3) {
             feedback = "Well done " + username + "!";
         } else if (points === 2) {
-            feedback = "Good job! You almost got them all.";
+            feedback = "Good job "+ username +"! You almost got them all.";
         } else if (points === 1) {
-            feedback = "Come on! You can do better.";
+            feedback = "Come on "+ username +"! You can do better.";
         } else {
-            feedback = "You can do better next time!";
+            feedback = "You can do better next time "+ username +"!";
         }
 
         Alert.alert("You got " + points + " out of 3 correct!", feedback);
